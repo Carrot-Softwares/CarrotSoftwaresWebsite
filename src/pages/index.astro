@@ -3,13 +3,14 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Menu from '../components/Menu.astro';
 import Footer from '../components/Footer.astro';
+import CarrotSoftwaresDevices from '../assets/carrotsoftwaresdevice.png';
 ---
 
 <Layout title="Carrot Softwares">
 	<Menu/>
 	<main>
 		<div id="slides">
-			<img id="devicesimg" src="/src/assets/carrotsoftwaresdevice.png" width="450" height="300">
+			<img id="devicesimg" src={CarrotSoftwaresDevices.src} width="450" height="300">
 			<h1>Bem-vindo ao nosso startup de softwares!</h1>
 			<p class="instructions">
 				Com o objetivo de ajudar o mundo todo, construímos os aplicativos de qualidade!

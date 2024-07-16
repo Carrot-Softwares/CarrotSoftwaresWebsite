@@ -12,7 +12,7 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/public/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
@@ -22,15 +22,11 @@ const { title } = Astro.props;
 </html>
 <style is:global>
 	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
+		background: rgb(19,107,0);
+		background: -moz-linear-gradient(90deg, rgba(19,107,0,1) 0%, rgba(47,140,14,1) 51%, rgba(20,255,0,1) 100%);
+		background: -webkit-linear-gradient(90deg, rgba(19,107,0,1) 0%, rgba(47,140,14,1) 51%, rgba(20,255,0,1) 100%);
+		background: linear-gradient(90deg, rgba(19,107,0,1) 0%, rgba(47,140,14,1) 51%, rgba(20,255,0,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#136b00",endColorstr="#14ff00",GradientType=1);
 	}
 	html {
 		font-family: system-ui, sans-serif;
